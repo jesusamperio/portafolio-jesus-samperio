@@ -1244,6 +1244,9 @@ ul {
     .boton {
         width: auto;
     }
+    .boton-completo {
+        width: 100%;
+    }
     .seccion {
         padding: 48px 0;
     }
