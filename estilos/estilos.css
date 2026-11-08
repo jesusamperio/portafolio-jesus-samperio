@@ -103,6 +103,8 @@
     box-sizing: border-box;
 }
 html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
     scroll-behavior: smooth;
     scroll-padding-top: 90px;
 }
@@ -1200,8 +1202,22 @@ ul {
     }
 }
 @media (orientation: landscape) and (max-height: 500px) {
+    body {
+        font-size: 15px;
+    }
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .menu a {
+        padding: 10px 14px;
+    }
+    .menu-ajustes {
+        margin-top: 8px;
+        padding-top: 10px;
+    }
     .inicio {
-        padding-top: 100px;
+        padding: 96px 0 48px;
     }
     .inicio-contenido {
         flex-direction: row;
@@ -1210,5 +1226,106 @@ ul {
     .inicio-foto {
         order: 0;
         width: 170px;
+    }
+    .inicio-titulo {
+        font-size: 32px;
+    }
+    .inicio-subtitulo {
+        margin-top: 12px;
+        font-size: 16px;
+    }
+    .inicio-bio {
+        margin-top: 14px;
+    }
+    .botones {
+        flex-direction: row;
+        margin-top: 22px;
+    }
+    .boton {
+        width: auto;
+    }
+    .seccion {
+        padding: 48px 0;
+    }
+    .seccion-encabezado {
+        margin-bottom: 26px;
+    }
+    .seccion-encabezado h2 {
+        font-size: 28px;
+    }
+    .grupo {
+        margin-bottom: 30px;
+    }
+    .habilidades-lista {
+        grid-template-columns: repeat(auto-fill, minmax(84px, 1fr));
+        gap: 12px;
+    }
+    .habilidad {
+        padding: 14px 6px;
+    }
+    .habilidad-icono {
+        width: 50px;
+        height: 50px;
+    }
+    .idioma {
+        min-width: 240px;
+    }
+    .proyecto {
+        flex-direction: row;
+        gap: 24px;
+        padding: 20px;
+    }
+    .proyecto-imagen {
+        width: 42%;
+    }
+    .proyecto-vertical {
+        flex-direction: column;
+    }
+    .proyecto-capturas {
+        flex-direction: row;
+    }
+    .proyecto-logo {
+        min-height: 180px;
+    }
+    .contacto-lista {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+    }
+    .contacto-tarjeta {
+        padding: 22px 12px;
+    }
+    .cv {
+        margin-top: 28px;
+        padding: 24px;
+    }
+    .pie-contenido {
+        flex-direction: row;
+        align-items: center;
+    }
+    .visor-contenido img {
+        max-height: calc(100vh - 90px);
+    }
+    .visor-texto {
+        margin-top: 6px;
+        font-size: 13px;
+    }
+}
+@media (orientation: landscape) and (max-height: 500px) and (min-width: 700px) {
+    .sobre-mi {
+        flex-direction: row;
+        gap: 28px;
+    }
+    .datos {
+        width: 290px;
+        padding: 22px;
+    }
+    .certificado {
+        flex-direction: row;
+        align-items: center;
+        gap: 24px;
+        padding: 20px;
+    }
+    .certificado-imagen {
+        width: 50%;
     }
 }
