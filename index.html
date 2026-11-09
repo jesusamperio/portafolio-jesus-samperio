@@ -12,6 +12,10 @@
     <input type="radio" name="idioma" id="idioma-en" class="selector-oculto">
     <input type="radio" name="idioma" id="idioma-it" class="selector-oculto">
     <input type="checkbox" id="tema" class="selector-oculto" autocomplete="off">
+    <input type="checkbox" id="ver-red-edificio" class="selector-oculto" autocomplete="off">
+    <input type="checkbox" id="ver-red-topologia" class="selector-oculto" autocomplete="off">
+    <input type="checkbox" id="ver-red-dns" class="selector-oculto" autocomplete="off">
+    <input type="checkbox" id="ver-red-voip" class="selector-oculto" autocomplete="off">
     <input type="checkbox" id="ver-profumi-inicio" class="selector-oculto" autocomplete="off">
     <input type="checkbox" id="ver-profumi-catalogo" class="selector-oculto" autocomplete="off">
     <input type="checkbox" id="ver-toefl" class="selector-oculto" autocomplete="off">
@@ -144,19 +148,19 @@
                     <div class="sobre-mi">
                         <div class="sobre-mi-texto">
                             <div class="es">
-                                <p>Me interesa especialmente el análisis de datos, la ciberseguridad y las redes, ya que considero que son áreas con un gran potencial para transformar la manera en que entendemos y aprovechamos la tecnología. Me llama la atención descubrir cómo funcionan las cosas detrás de cada herramienta, analizar información y comprender cómo se pueden proteger los sistemas y los datos.</p>
-                                <p>A lo largo de mi formación he buscado conocer diferentes tecnologías y ampliar mi perspectiva sobre el campo de TI. Me gusta mantenerme abierto a nuevas ideas, experimentar con diferentes herramientas y descubrir qué áreas se relacionan más con mis intereses y objetivos.</p>
-                                <p>A futuro, me gustaría especializarme, participar en proyectos que tengan un impacto positivo y convertir mis conocimientos en soluciones que aporten valor. Considero que el aprendizaje es un proceso constante y que cada experiencia representa una oportunidad para avanzar hacia mis metas profesionales.</p>
+                                <p>Me interesa especialmente el análisis de datos, la ciberseguridad y las redes, áreas que considero fundamentales para el desarrollo tecnológico. Me gusta comprender cómo funcionan las herramientas, analizar información y descubrir nuevas formas de aprovechar y proteger la tecnología.</p>
+                                <p>Durante mi formación he buscado explorar diferentes tecnologías, experimentar con herramientas y ampliar mis conocimientos para identificar mis principales intereses.</p>
+                                <p>A futuro, me gustaría especializarme, participar en proyectos de impacto positivo y desarrollar soluciones que aporten valor, manteniendo siempre una mentalidad de aprendizaje y mejora continua.</p>
                             </div>
                             <div class="en">
-                                <p>I'm especially interested in data analysis, cybersecurity and networking, since I believe they are areas with great potential to transform the way we understand and make use of technology. I'm drawn to discovering how things work behind every tool, analyzing information and understanding how systems and data can be protected.</p>
-                                <p>Throughout my education I have sought to learn about different technologies and broaden my perspective on the IT field. I like to stay open to new ideas, experiment with different tools and discover which areas relate most to my interests and goals.</p>
-                                <p>In the future, I would like to specialize, take part in projects that have a positive impact and turn my knowledge into solutions that add value. I believe learning is a constant process and that every experience is an opportunity to move toward my professional goals.</p>
+                                <p>I'm especially interested in data analysis, cybersecurity and networking, areas I consider essential to technological development. I enjoy understanding how tools work, analyzing information and discovering new ways to make the most of technology and protect it.</p>
+                                <p>Throughout my education I have sought to explore different technologies, experiment with tools and broaden my knowledge to identify my main interests.</p>
+                                <p>In the future, I would like to specialize, take part in projects with a positive impact and develop solutions that add value, always keeping a mindset of learning and continuous improvement.</p>
                             </div>
                             <div class="it">
-                                <p>Mi interessano in particolare l'analisi dei dati, la cybersicurezza e le reti, perché credo che siano aree con un grande potenziale per trasformare il modo in cui comprendiamo e sfruttiamo la tecnologia. Mi affascina scoprire come funzionano le cose dietro ogni strumento, analizzare informazioni e capire come si possono proteggere i sistemi e i dati.</p>
-                                <p>Durante la mia formazione ho cercato di conoscere tecnologie diverse e di ampliare la mia prospettiva sul campo dell'IT. Mi piace restare aperto a nuove idee, sperimentare con strumenti diversi e scoprire quali aree si avvicinano di più ai miei interessi e obiettivi.</p>
-                                <p>In futuro vorrei specializzarmi, partecipare a progetti che abbiano un impatto positivo e trasformare le mie conoscenze in soluzioni che apportino valore. Credo che l'apprendimento sia un processo costante e che ogni esperienza rappresenti un'opportunità per avanzare verso i miei obiettivi professionali.</p>
+                                <p>Mi interessano in particolare l'analisi dei dati, la cybersicurezza e le reti, aree che considero fondamentali per lo sviluppo tecnologico. Mi piace capire come funzionano gli strumenti, analizzare informazioni e scoprire nuovi modi per sfruttare e proteggere la tecnologia.</p>
+                                <p>Durante la mia formazione ho cercato di esplorare diverse tecnologie, sperimentare con vari strumenti e ampliare le mie conoscenze per individuare i miei interessi principali.</p>
+                                <p>In futuro vorrei specializzarmi, partecipare a progetti con un impatto positivo e sviluppare soluzioni che apportino valore, mantenendo sempre una mentalità di apprendimento e miglioramento continuo.</p>
                             </div>
                         </div>
                         <aside class="datos">
@@ -391,43 +395,82 @@
                             <span class="it">Progetti</span>
                         </h2>
                     </div>
-                    <article class="proyecto">
-                        <div class="proyecto-imagen proyecto-logo">
-                            <img class="solo-claro" src="imagenes/momentum-claro.png" alt="Logotipo de Momentum" width="1200" height="440">
-                            <img class="solo-oscuro" src="imagenes/momentum-oscuro.png" alt="Logotipo de Momentum" width="1200" height="440">
-                            <p class="proximamente">
-                                <span class="es">Próximamente</span>
-                                <span class="en">Coming soon</span>
-                                <span class="it">Prossimamente</span>
-                            </p>
+                    <article class="proyecto proyecto-vertical">
+                        <div class="proyecto-imagen proyecto-capturas">
+                            <label class="captura captura-centro" for="ver-red-edificio">
+                                <img src="imagenes/red-edificio.png" alt="Vista general del edificio simulado con sus tres pisos" width="1141" height="789">
+                                <span class="captura-texto">
+                                    <span class="es">Edificio</span>
+                                    <span class="en">Building</span>
+                                    <span class="it">Edificio</span>
+                                </span>
+                            </label>
+                            <label class="captura captura-centro" for="ver-red-topologia">
+                                <img src="imagenes/red-topologia.png" alt="Topología lógica de la red universitaria" width="1630" height="805">
+                                <span class="captura-texto">
+                                    <span class="es">Topología</span>
+                                    <span class="en">Topology</span>
+                                    <span class="it">Topologia</span>
+                                </span>
+                            </label>
+                            <label class="captura" for="ver-red-dns">
+                                <img src="imagenes/red-dns.png" alt="Sitio web de la universidad abierto por nombre de dominio" width="982" height="1086">
+                                <span class="captura-texto">
+                                    <span class="es">DNS y web</span>
+                                    <span class="en">DNS and web</span>
+                                    <span class="it">DNS e web</span>
+                                </span>
+                            </label>
+                            <label class="captura captura-izquierda" for="ver-red-voip">
+                                <img src="imagenes/red-voip.png" alt="Llamada VoIP activa entre dos teléfonos IP" width="1504" height="507">
+                                <span class="captura-texto">
+                                    <span class="es">VoIP</span>
+                                    <span class="en">VoIP</span>
+                                    <span class="it">VoIP</span>
+                                </span>
+                            </label>
                         </div>
                         <div class="proyecto-info">
                             <ul class="insignias">
                                 <li class="insignia">
-                                    <span class="es">Plataforma de seguimiento de rehabilitación</span>
-                                    <span class="en">Rehabilitation tracking platform</span>
-                                    <span class="it">Piattaforma di monitoraggio della riabilitazione</span>
-                                </li>
-                                <li class="insignia insignia-roja">
-                                    <span class="es">Prototipo</span>
-                                    <span class="en">Prototype</span>
-                                    <span class="it">Prototipo</span>
+                                    <span class="es">Simulación de red</span>
+                                    <span class="en">Network simulation</span>
+                                    <span class="it">Simulazione di rete</span>
                                 </li>
                             </ul>
-                            <h3>Momentum</h3>
-                            <p class="es">Proyecto en construcción. Pronto compartiré más detalles, capturas y avances.</p>
-                            <p class="en">Project under construction. More details, screenshots and progress coming soon.</p>
-                            <p class="it">Progetto in costruzione. Presto condividerò più dettagli, schermate e progressi.</p>
-                            <p class="estado">
-                                <span class="es">En construcción</span>
-                                <span class="en">Under construction</span>
-                                <span class="it">In costruzione</span>
-                            </p>
+                            <h3>
+                                <span class="es">Infraestructura de red universitaria</span>
+                                <span class="en">University Network Infrastructure</span>
+                                <span class="it">Infrastruttura di rete universitaria</span>
+                            </h3>
+                            <p class="es">Diseño y simulación en Cisco Packet Tracer de la infraestructura de red del edificio de Informática de la Universidad Politécnica de Sinaloa. El proyecto integra una topología jerárquica, segmentación mediante VLANs, direccionamiento IPv4 con VLSM y enrutamiento inter-VLAN mediante Router-on-a-Stick, además de servicios centralizados de DHCP, DNS, HTTP y correo electrónico, telefonía IP (VoIP) e integración de dispositivos IoT. La red fue configurada y probada para garantizar la conectividad y el funcionamiento de los servicios en cada piso del edificio.</p>
+                            <p class="en">Design and simulation in Cisco Packet Tracer of the network infrastructure of the Computer Science building at the Universidad Politécnica de Sinaloa. The project integrates a hierarchical topology, VLAN segmentation, IPv4 addressing with VLSM and inter-VLAN routing through Router-on-a-Stick, along with centralized DHCP, DNS, HTTP and email services, IP telephony (VoIP) and IoT device integration. The network was configured and tested to ensure connectivity and the operation of the services on every floor of the building.</p>
+                            <p class="it">Progettazione e simulazione in Cisco Packet Tracer dell'infrastruttura di rete dell'edificio di Informatica dell'Universidad Politécnica de Sinaloa. Il progetto integra una topologia gerarchica, la segmentazione tramite VLAN, l'indirizzamento IPv4 con VLSM e il routing inter-VLAN tramite Router-on-a-Stick, oltre ai servizi centralizzati di DHCP, DNS, HTTP e posta elettronica, alla telefonia IP (VoIP) e all'integrazione di dispositivi IoT. La rete è stata configurata e testata per garantire la connettività e il funzionamento dei servizi su ogni piano dell'edificio.</p>
+                            <ul class="tecnologias">
+                                <li>Cisco Packet Tracer</li>
+                                <li>VLAN</li>
+                                <li>VLSM</li>
+                                <li>Router-on-a-Stick</li>
+                                <li>VoIP</li>
+                                <li>IoT</li>
+                            </ul>
+                            <div class="botones">
+                                <a class="boton boton-secundario" href="https://github.com/jesusamperio/infraestructura-red-universitaria" target="_blank" rel="noopener">
+                                    <span class="es">Ver en GitHub</span>
+                                    <span class="en">View on GitHub</span>
+                                    <span class="it">Vedi su GitHub</span>
+                                </a>
+                                <a class="boton boton-secundario" href="https://github.com/jesusamperio/infraestructura-red-universitaria/raw/main/infraestructura-red-universitaria.pkt">
+                                    <span class="es">Descargar .pkt</span>
+                                    <span class="en">Download .pkt</span>
+                                    <span class="it">Scarica .pkt</span>
+                                </a>
+                            </div>
                         </div>
                     </article>
-                    <article class="proyecto proyecto-vertical" id="profumi">
+                    <article class="proyecto proyecto-vertical">
                         <div class="proyecto-imagen proyecto-capturas">
-                            <label class="captura" for="ver-profumi-inicio">
+                            <label class="captura captura-izquierda" for="ver-profumi-inicio">
                                 <img src="imagenes/profumi-inicio.png" alt="Captura de la página de inicio de Profumi Fragancias" width="2880" height="1346">
                                 <span class="captura-texto">
                                     <span class="es">Inicio</span>
@@ -477,6 +520,40 @@
                                     <span class="it">Vedi su GitHub</span>
                                 </a>
                             </div>
+                        </div>
+                    </article>
+                    <article class="proyecto">
+                        <div class="proyecto-imagen proyecto-logo">
+                            <img class="solo-claro" src="imagenes/momentum-claro.png" alt="Logotipo de Momentum" width="1200" height="440">
+                            <img class="solo-oscuro" src="imagenes/momentum-oscuro.png" alt="Logotipo de Momentum" width="1200" height="440">
+                            <p class="proximamente">
+                                <span class="es">Próximamente</span>
+                                <span class="en">Coming soon</span>
+                                <span class="it">Prossimamente</span>
+                            </p>
+                        </div>
+                        <div class="proyecto-info">
+                            <ul class="insignias">
+                                <li class="insignia">
+                                    <span class="es">Plataforma de seguimiento de rehabilitación</span>
+                                    <span class="en">Rehabilitation tracking platform</span>
+                                    <span class="it">Piattaforma di monitoraggio della riabilitazione</span>
+                                </li>
+                                <li class="insignia insignia-roja">
+                                    <span class="es">Prototipo</span>
+                                    <span class="en">Prototype</span>
+                                    <span class="it">Prototipo</span>
+                                </li>
+                            </ul>
+                            <h3>Momentum</h3>
+                            <p class="es">Proyecto en construcción. Pronto compartiré más detalles, capturas y avances.</p>
+                            <p class="en">Project under construction. More details, screenshots and progress coming soon.</p>
+                            <p class="it">Progetto in costruzione. Presto condividerò più dettagli, schermate e progressi.</p>
+                            <p class="estado">
+                                <span class="es">En construcción</span>
+                                <span class="en">Under construction</span>
+                                <span class="it">In costruzione</span>
+                            </p>
                         </div>
                     </article>
                 </div>
@@ -610,6 +687,54 @@
                 </p>
             </div>
         </footer>
+        <div class="visor visor-red-edificio">
+            <label class="visor-fondo" for="ver-red-edificio"></label>
+            <div class="visor-contenido">
+                <label class="visor-cerrar" for="ver-red-edificio">×</label>
+                <img src="imagenes/red-edificio.png" alt="Vista general del edificio simulado con sus tres pisos" width="1141" height="789">
+                <p class="visor-texto">
+                    <span class="es">Vista general del edificio con sus tres pisos</span>
+                    <span class="en">Building overview with its three floors</span>
+                    <span class="it">Vista generale dell'edificio con i suoi tre piani</span>
+                </p>
+            </div>
+        </div>
+        <div class="visor visor-red-topologia">
+            <label class="visor-fondo" for="ver-red-topologia"></label>
+            <div class="visor-contenido">
+                <label class="visor-cerrar" for="ver-red-topologia">×</label>
+                <img src="imagenes/red-topologia.png" alt="Topología lógica de la red universitaria" width="1630" height="805">
+                <p class="visor-texto">
+                    <span class="es">Topología lógica: núcleo, switches, router, servidores e IoT</span>
+                    <span class="en">Logical topology: core, switches, router, servers and IoT</span>
+                    <span class="it">Topologia logica: core, switch, router, server e IoT</span>
+                </p>
+            </div>
+        </div>
+        <div class="visor visor-red-dns">
+            <label class="visor-fondo" for="ver-red-dns"></label>
+            <div class="visor-contenido">
+                <label class="visor-cerrar" for="ver-red-dns">×</label>
+                <img src="imagenes/red-dns.png" alt="Sitio web de la universidad abierto por nombre de dominio" width="982" height="1086">
+                <p class="visor-texto">
+                    <span class="es">Sitio web abierto por nombre de dominio (DNS y HTTP)</span>
+                    <span class="en">Website opened by domain name (DNS and HTTP)</span>
+                    <span class="it">Sito web aperto tramite nome di dominio (DNS e HTTP)</span>
+                </p>
+            </div>
+        </div>
+        <div class="visor visor-red-voip">
+            <label class="visor-fondo" for="ver-red-voip"></label>
+            <div class="visor-contenido">
+                <label class="visor-cerrar" for="ver-red-voip">×</label>
+                <img src="imagenes/red-voip.png" alt="Llamada VoIP activa entre dos teléfonos IP" width="1504" height="507">
+                <p class="visor-texto">
+                    <span class="es">Llamada VoIP entre la planta baja y el segundo piso</span>
+                    <span class="en">VoIP call between the ground floor and the second floor</span>
+                    <span class="it">Chiamata VoIP tra il piano terra e il secondo piano</span>
+                </p>
+            </div>
+        </div>
         <div class="visor visor-profumi-inicio">
             <label class="visor-fondo" for="ver-profumi-inicio"></label>
             <div class="visor-contenido">
